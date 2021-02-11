@@ -1,0 +1,45 @@
+body {
+    font-family: "SSP-Regular", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+    overflow-x: hidden;
+    background-color: #efefef;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ol {
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.section-header {
+    text-align: center;
+    &__subtitle {
+        font-family: "SSP-Bold", Arial, Helvetica, sans-serif;
+        font-size: 27px;
+        letter-spacing: 1.9px;
+        margin-bottom: 32px;
+    }
+    &__text {
+        max-width: 768px;
+        margin: 0 auto;
+        line-height: 33px;
+    }
+}
+
