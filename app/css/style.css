@@ -69,17 +69,28 @@ ol {
   text-align: center;
 }
 
-.section-header__subtitle {
+.section-header__subtitle_black {
   font-family: "SSP-Bold", Arial, Helvetica, sans-serif;
   font-size: 27px;
   letter-spacing: 1.9px;
   margin-bottom: 32px;
 }
 
+.section-header__subtitle_multicolored {
+  font-family: "SSP-Bold", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  letter-spacing: 2.6px;
+  text-transform: capitalize;
+}
+
 .section-header__text {
   max-width: 768px;
   margin: 0 auto;
   line-height: 33px;
+}
+
+.section-header__span {
+  color: #ff5101;
 }
 
 .wr-main {
@@ -259,6 +270,7 @@ ol {
   font-size: 30px;
   letter-spacing: 2.6px;
   margin-top: 31px;
+  text-transform: capitalize;
 }
 
 .wr-intro h2 span {
@@ -647,4 +659,133 @@ ol {
 .slick-dots li.slick-active button:before {
   background-color: #ff3d00;
   opacity: 1;
+}
+
+.wr-quote {
+  background-color: #4e4e4e;
+  padding-top: 112px;
+  padding-bottom: 123px;
+}
+
+.wr-quote__text {
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  font-style: oblique;
+}
+
+.wr-quote__span {
+  color: #ff3d00;
+}
+
+.wr-team {
+  padding-top: 75px;
+  padding-bottom: 57px;
+}
+
+.wr-team__text {
+  margin-top: 41px;
+}
+
+.wr-team__members {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1078px;
+  padding-top: 10px;
+  margin: 50px auto;
+}
+
+.member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 10px 10px 10px;
+  width: 175px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.member__ava {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 130px;
+  height: 130px;
+  padding-top: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.member__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center top;
+     object-position: center top;
+}
+
+.member__name {
+  font-family: "SSP-Bold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 37px;
+  margin-bottom: 0px;
+}
+
+.member__position {
+  letter-spacing: -0.5px;
+  margin-top: 13px;
+}
+
+.wr-consult {
+  background-image: url("../img/dest/consult/mountains.jpg");
+  background-size: cover;
+  background-position: left center;
+  height: 651px;
+  padding: 20px 0;
+}
+
+.wr-consult__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.wr-consult__content {
+  width: 686px;
+  margin-right: 97px;
+  padding-top: 78px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wr-consult__subtitle {
+  color: #fff;
+  font-family: "SSP-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  letter-spacing: 2.21px;
 }

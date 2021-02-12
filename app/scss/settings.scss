@@ -30,16 +30,28 @@ ol {
 
 .section-header {
     text-align: center;
-    &__subtitle {
+    &__subtitle_black {
         font-family: "SSP-Bold", Arial, Helvetica, sans-serif;
         font-size: 27px;
         letter-spacing: 1.9px;
         margin-bottom: 32px;
     }
+
+    &__subtitle_multicolored {
+        font-family: "SSP-Bold", Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        letter-spacing: 2.6px;
+        text-transform: capitalize;
+    }
+
     &__text {
         max-width: 768px;
         margin: 0 auto;
         line-height: 33px;
+    }
+
+    &__span {
+        color: #ff5101;
     }
 }
 

@@ -153,6 +153,7 @@
         font-size: 30px;
         letter-spacing: 2.6px;
         margin-top: 31px;
+        text-transform: capitalize;
 
         span {
             color: #ff5101;
@@ -514,6 +515,112 @@
 }
 
 
+// секция quote
+
+.wr-quote {
+    background-color: #4e4e4e;
+    padding-top: 112px;
+    padding-bottom: 123px;
+
+    &__text {
+        font-size: 24px;
+        text-align: center;
+        color: #fff;
+        font-style: oblique;
+    }
+
+    &__span {
+        color: #ff3d00;
+    }
+}
 
 
+// секция team-members
 
+.wr-team {
+    padding-top: 75px;
+    padding-bottom: 57px;
+
+    &__text {
+        margin-top: 41px;
+    }
+
+    &__members {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1078px;
+        padding-top: 10px;
+        margin: 50px auto;
+
+    }
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px 10px 10px;
+    width: 175px;
+    box-sizing: border-box;
+
+    &__ava {
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 130px;
+        height: 130px;
+        padding-top: 5px;
+        box-sizing: border-box;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center top;
+    }
+
+    &__name {
+        font-family: "SSP-Bold", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-top: 37px;
+        margin-bottom: 0px;
+    }
+
+    &__position {
+        letter-spacing: -0.5px;
+        margin-top: 13px;
+    }
+}
+
+// секция consult
+
+.wr-consult {
+    background-image: url("../img/dest/consult/mountains.jpg");
+    background-size: cover;
+    background-position: left center;
+    height: 651px;
+    padding: 20px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__content {
+        width: 686px;
+        margin-right: 97px;
+        padding-top: 78px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__subtitle {
+        color: #fff;
+        font-family: "SSP-Semibold", Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        letter-spacing: 2.21px;
+    }
+}
