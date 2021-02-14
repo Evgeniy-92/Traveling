@@ -778,9 +778,14 @@ ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 
 .wr-consult__subtitle {
@@ -788,4 +793,143 @@ ol {
   font-family: "SSP-Semibold", Arial, Helvetica, sans-serif;
   font-size: 30px;
   letter-spacing: 2.21px;
+}
+
+.progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 85px 45px 85px;
+  margin-top: 22px;
+  background-color: rgba(255, 255, 255, 0.34);
+}
+
+.progress__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 180px;
+}
+
+.progress__ring {
+  width: 50px;
+  height: 50px;
+  border: 8px solid #ff3d00;
+  border-radius: 50%;
+  border-left: 8px solid #fff;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progress__number {
+  font-family: "SSP-Bold", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #eee;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.progress__orange {
+  color: #ff4800;
+}
+
+.progress__subtitle {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #eee;
+  letter-spacing: 1.5px;
+  margin-top: 17px;
+  margin-bottom: 10px;
+}
+
+.progress::after {
+  content: "";
+  width: 63px;
+  height: 6px;
+  background-color: #e64a19;
+  position: absolute;
+  top: 475px;
+  left: 309px;
+}
+
+.wr-food {
+  padding: 44px 0;
+}
+
+.wr-food__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wr-food__subtitle {
+  font-family: "ThirstySED", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: #2c2c2c;
+  text-transform: capitalize;
+}
+
+.wr-food__orange {
+  color: #ff3f04;
+}
+
+.wr-food__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 677px;
+  padding: 10px;
+}
+
+.wr-food__picture {
+  width: 352px;
+  height: 146px;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.wr-food__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.wr-food__description {
+  width: 245px;
 }
