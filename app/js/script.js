@@ -2,16 +2,34 @@ new Swiper('.articles-slider', {
     navigation: {
         nextEl: '.articles-arrow',
     },
-    slidesPerView: 3,
+    slidesPerView: 2,
     loop: true,
+
+    breakpoints: {
+        921: {
+            slidesPerView: 2,
+
+        },
+        1112: {
+            slidesPerView: 3,
+        },
+        
+    }
 });
 
 new Swiper('.clients-slider', {
     navigation: {
         nextEl: '.clients-arrow',
     },
-    slidesPerView: 4,
+    slidesPerView: 3,
     loop: true,
+    breakpoints: {
+        922: {
+            slidesPerView: 4,
+
+        },
+        
+    }
 });
 
 $('.wr-portfolio__slick').slick({
@@ -21,9 +39,22 @@ $('.wr-portfolio__slick').slick({
     dots: true,
     focusOnSelect: true,
     speed: 1000,
-    // centerMode: true,
-    // initialSlide: 2, /* начать со второго слайда */
-    // variableWidth: true
+    // responsive: [
+    //     {
+    //         breakpoint: 1024,
+    //         settings: {
+    //             slidesToShow: 1,
+    //             slidesToScroll: 1
+    //           }
+    //     },
+    // ]    
+    
 });
+
+$(document).ready(function() {
+    $('.burger').click(function(e) {
+        $('.burger,.nav').toggleClass('active');
+    })
+})
 
 

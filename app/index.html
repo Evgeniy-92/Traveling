@@ -15,15 +15,19 @@
         <header class="header">
             <div class="wrapper">
                 <a href="#" class="logo">Just go <span>away</span></a>
-                <nav class="nav">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Hello</a></li>
-                        <li><a href="#">&#9776</a></li>
-                    </ul>
-                </nav>
+                <div class="nav-header">
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Stories</a></li>
+                            <li><a href="#">Hello</a></li>
+                        </ul>
+                    </nav>
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </header>
         <section class="wr-home">
@@ -101,96 +105,99 @@
                 <p class="wr-articles__text section-header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus leo nisl, et tincidunt magna pretium et. Fusce iaculis sollicitudin nunc mollis lacinia. Morbi sed ante vitae eros pretium faucibus.</p>
             </div>
         </div>
-        <div class="articles-slider swiper-container">
-            <div class="articles-slider__wrapper swiper-wrapper">
-                <div class="articles-slider__slide articles-slider__slide_color_blue swiper-slide">
-                    <h4 class="articles-slider__caption">comic</h4>
-                    <p class="articles-slider__desc">Lorem ipsum dolor sit amet, consectetur adip&shyiscing elit.</p>
-                    <div class="articles-slider__author author">
-                        <div class="author__photo photo">
-                            <img class="photo__img" src="./img/dest/articles/jimmy.png" alt="Jimmy">
-                        </div>
-                        <div class="author__information">
-                            <h4 class="author__name">Jimmy Jefferson</h4>
-                            <time class="author__time">21/08/2013</time>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="articles-slider__slide articles-slider__slide_color_pink swiper-slide">
-                    <h4 class="articles-slider__caption">lifestyle</h4>
-                    <p class="articles-slider__desc">Lorem ipsum dolor sit amet, consectetur adip&shyiscing elit.</p>
-                    <div class="articles-slider__author author">
-                        <div class="author__photo photo">
-                            <img class="photo__img" src="./img/dest/articles/gail.png" alt="Gail">
-                        </div>
-                        <div class="author__information">
-                            <h4 class="author__name">Gail Gutierrez</h4>
-                            <time class="author__time">21/08/2013</time>
+        <div class="wr-articles__box">
+            <div class="articles-slider swiper-container">
+                <div class="articles-slider__wrapper swiper-wrapper">
+                    <div class="articles-slider__slide articles-slider__slide_color_blue swiper-slide">
+                        <h4 class="articles-slider__caption">comic</h4>
+                        <p class="articles-slider__desc">Lorem ipsum dolor sit amet, consectetur adip&shyiscing elit.</p>
+                        <div class="articles-slider__author author">
+                            <div class="author__photo photo">
+                                <img class="photo__img" src="./img/dest/articles/jimmy.png" alt="Jimmy">
+                            </div>
+                            <div class="author__information">
+                                <h4 class="author__name">Jimmy Jefferson</h4>
+                                <time class="author__time">21/08/2013</time>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="articles-slider__slide articles-slider__slide_color_purple  swiper-slide">
-                    <h4 class="articles-slider__caption">travel</h4>
-                    <p class="articles-slider__desc">Lorem ipsum dolor sit amet, consectetur adip&shyiscing elit.</p>
-                    <div class="articles-slider__author author">
-                        <div class="author__photo photo">
-                            <img class="photo__img" src="./img/dest/articles/mason.png" alt="Mason">
-                        </div>
-                        <div class="author__information">
-                            <h4 class="author__name">Mason Johnston</h4>
-                            <time class="author__time">21/08/2013</time>
-                        </div>
-                    </div>
-                </div>
-                <div class="articles-slider__slide articles-slider__slide_color_blue swiper-slide">
-                    <h4 class="articles-slider__caption">comic</h4>
-                    <p class="articles-slider__desc">Lorem ipsum dolor sit amet, consectetur adip&shyiscing elit.</p>
-                    <div class="articles-slider__author author">
-                        <div class="author__photo photo">
-                            <img class="photo__img" src="./img/dest/articles/jimmy.png" alt="Jimmy">
-                        </div>
-                        <div class="author__information">
-                            <h4 class="author__name">Jimmy Jefferson</h4>
-                            <time class="author__time">21/08/2013</time>
+    
+                    <div class="articles-slider__slide articles-slider__slide_color_pink swiper-slide">
+                        <h4 class="articles-slider__caption">lifestyle</h4>
+                        <p class="articles-slider__desc">Lorem ipsum dolor sit amet, consectetur adip&shyiscing elit.</p>
+                        <div class="articles-slider__author author">
+                            <div class="author__photo photo">
+                                <img class="photo__img" src="./img/dest/articles/gail.png" alt="Gail">
+                            </div>
+                            <div class="author__information">
+                                <h4 class="author__name">Gail Gutierrez</h4>
+                                <time class="author__time">21/08/2013</time>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="articles-slider__slide articles-slider__slide_color_pink swiper-slide">
-                    <h4 class="articles-slider__caption">lifestyle</h4>
-                    <p class="articles-slider__desc">Lorem ipsum dolor sit amet, consectetur adip&shyiscing elit.</p>
-                    <div class="articles-slider__author author">
-                        <div class="author__photo photo">
-                            <img class="photo__img" src="./img/dest/articles/gail.png" alt="Gail">
-                        </div>
-                        <div class="author__information">
-                            <h4 class="author__name">Gail Gutierrez</h4>
-                            <time class="author__time">21/08/2013</time>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="articles-slider__slide articles-slider__slide_color_purple  swiper-slide">
-                    <h4 class="articles-slider__caption">travel</h4>
-                    <p class="articles-slider__desc">Lorem ipsum dolor sit amet, consectetur adip&shyiscing elit.</p>
-                    <div class="articles-slider__author author">
-                        <div class="author__photo photo">
-                            <img class="photo__img" src="./img/dest/articles/mason.png" alt="Mason">
-                        </div>
-                        <div class="author__information">
-                            <h4 class="author__name">Mason Johnston</h4>
-                            <time class="author__time">21/08/2013</time>
+    
+                    <div class="articles-slider__slide articles-slider__slide_color_purple  swiper-slide">
+                        <h4 class="articles-slider__caption">travel</h4>
+                        <p class="articles-slider__desc">Lorem ipsum dolor sit amet, consectetur adip&shyiscing elit.</p>
+                        <div class="articles-slider__author author">
+                            <div class="author__photo photo">
+                                <img class="photo__img" src="./img/dest/articles/mason.png" alt="Mason">
+                            </div>
+                            <div class="author__information">
+                                <h4 class="author__name">Mason Johnston</h4>
+                                <time class="author__time">21/08/2013</time>
+                            </div>
                         </div>
                     </div>
+                    <div class="articles-slider__slide articles-slider__slide_color_blue swiper-slide">
+                        <h4 class="articles-slider__caption">comic</h4>
+                        <p class="articles-slider__desc">Lorem ipsum dolor sit amet, consectetur adip&shyiscing elit.</p>
+                        <div class="articles-slider__author author">
+                            <div class="author__photo photo">
+                                <img class="photo__img" src="./img/dest/articles/jimmy.png" alt="Jimmy">
+                            </div>
+                            <div class="author__information">
+                                <h4 class="author__name">Jimmy Jefferson</h4>
+                                <time class="author__time">21/08/2013</time>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="articles-slider__slide articles-slider__slide_color_pink swiper-slide">
+                        <h4 class="articles-slider__caption">lifestyle</h4>
+                        <p class="articles-slider__desc">Lorem ipsum dolor sit amet, consectetur adip&shyiscing elit.</p>
+                        <div class="articles-slider__author author">
+                            <div class="author__photo photo">
+                                <img class="photo__img" src="./img/dest/articles/gail.png" alt="Gail">
+                            </div>
+                            <div class="author__information">
+                                <h4 class="author__name">Gail Gutierrez</h4>
+                                <time class="author__time">21/08/2013</time>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="articles-slider__slide articles-slider__slide_color_purple  swiper-slide">
+                        <h4 class="articles-slider__caption">travel</h4>
+                        <p class="articles-slider__desc">Lorem ipsum dolor sit amet, consectetur adip&shyiscing elit.</p>
+                        <div class="articles-slider__author author">
+                            <div class="author__photo photo">
+                                <img class="photo__img" src="./img/dest/articles/mason.png" alt="Mason">
+                            </div>
+                            <div class="author__information">
+                                <h4 class="author__name">Mason Johnston</h4>
+                                <time class="author__time">21/08/2013</time>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-                
+            </div>
+            <div class="articles-arrow">
+                <img src="./img/dest/arrow-right.png" alt="">
             </div>
         </div>
-        <div class="articles-arrow">
-            <img src="./img/dest/arrow-right.png" alt="">
-        </div>
+        
     </section>
 
     <section class="wr-clients">
