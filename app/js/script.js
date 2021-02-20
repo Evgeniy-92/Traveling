@@ -1,7 +1,13 @@
 new Swiper('.articles-slider', {
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
     navigation: {
         nextEl: '.articles-arrow',
     },
+
     slidesPerView: 2,
     loop: true,
 
@@ -18,15 +24,20 @@ new Swiper('.articles-slider', {
 });
 
 new Swiper('.clients-slider', {
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
     navigation: {
         nextEl: '.clients-arrow',
     },
+        
     slidesPerView: 3,
     loop: true,
     breakpoints: {
-        922: {
+        992: {
             slidesPerView: 4,
-
         },
         
     }
@@ -39,16 +50,15 @@ $('.wr-portfolio__slick').slick({
     dots: true,
     focusOnSelect: true,
     speed: 1000,
-    // responsive: [
-    //     {
-    //         breakpoint: 1024,
-    //         settings: {
-    //             slidesToShow: 1,
-    //             slidesToScroll: 1
-    //           }
-    //     },
-    // ]    
-    
+
+    responsive: [
+        {
+          breakpoint: 425,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+    ]
 });
 
 $(document).ready(function() {
