@@ -4,7 +4,8 @@
 .wr-main {
     background-image: url("../img/dest/header/main-bg.jpg");
     background-size: cover;
-    height: 100vh;
+    // height: 100vh;
+    height: 998px;
     background-position: center bottom;
 }
 
@@ -470,10 +471,7 @@
 
     &__box {
         margin-left: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
+        
         @media all and (max-width: 424px) {
             display: flex;
             flex-direction: column;
@@ -610,7 +608,7 @@
 
 .articles-slider__slide {
     max-width: 369px;
-    max-height: 305px;
+    max-height: 364px;
     margin: 0 15px;
     padding: 44px 30px 51px 35px;
     box-sizing: border-box;
@@ -624,6 +622,7 @@
 
     @media all and (max-width: 1366px) {
         max-width: 320px;
+        max-height: 305px;
         padding: 18px 30px 21px 35px;
     }
 
@@ -1383,16 +1382,22 @@
     &__box {
         display: flex;
         justify-content: space-around;
-        width: 677px;
-        padding: 10px;
-        
+        width: 874px;
+        padding-bottom: 14px;
     }
+}
 
-    &__picture {
+
+.picture {
+    width: 455px;
+    display: flex;
+    justify-content: flex-end;
+
+    &__item {
         width: 352px;
         height: 146px;
         overflow: hidden;
-        border: 2px solid black;
+        border: 2px solid #f7941d;
         border-radius: 10px;
     }
 
@@ -1402,11 +1407,66 @@
         object-fit: cover;
         object-position: center center;
     }
-    
-    
-    &__description {
+}
+
+
+
+
+.description {
+    width: 355px;
+
+    &__item {
         width: 245px;
+    }
+
+    &__date {
+        font-size: 8px;
+    }
+
+    &__subtitle {
+        font-family: "SSP-Semibold", Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        margin-top: 9px;
+    }
+
+    &__text {
+        font-size: 9px;
+        line-height: 16px;
+        margin-top: 29px;
     }
 }
 
 
+
+.food-active {
+    padding-bottom: 42px;
+    padding-top: 28px;
+    width: 874px;
+
+    .picture__item {
+        width: 452px;
+        height: 303px;
+    }
+
+    .description {
+        display: flex;
+        align-items: center;
+
+        &__item {
+            width: 350px;
+        }
+
+        &__date {
+            font-size: 11px;
+        }
+    
+        &__subtitle {
+            font-size: 19px;
+        }
+    
+        &__text {
+            font-size: 13px;
+            line-height: 23px;
+        }
+    }
+}

@@ -107,7 +107,7 @@ ol {
 .wr-main {
   background-image: url("../img/dest/header/main-bg.jpg");
   background-size: cover;
-  height: 100vh;
+  height: 998px;
   background-position: center bottom;
 }
 
@@ -361,16 +361,6 @@ ol {
 
 .wr-services__box {
   margin-left: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .box__icon_clock {
@@ -450,7 +440,7 @@ ol {
 
 .articles-slider__slide {
   max-width: 369px;
-  max-height: 305px;
+  max-height: 364px;
   margin: 0 15px;
   padding: 44px 30px 51px 35px;
   -webkit-box-sizing: border-box;
@@ -1015,19 +1005,29 @@ ol {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 677px;
-  padding: 10px;
+  width: 874px;
+  padding-bottom: 14px;
 }
 
-.wr-food__picture {
+.picture {
+  width: 455px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.picture__item {
   width: 352px;
   height: 146px;
   overflow: hidden;
-  border: 2px solid black;
+  border: 2px solid #f7941d;
   border-radius: 10px;
 }
 
-.wr-food__img {
+.picture__img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1036,8 +1036,65 @@ ol {
      object-position: center center;
 }
 
-.wr-food__description {
+.description {
+  width: 355px;
+}
+
+.description__item {
   width: 245px;
+}
+
+.description__date {
+  font-size: 8px;
+}
+
+.description__subtitle {
+  font-family: "SSP-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-top: 9px;
+}
+
+.description__text {
+  font-size: 9px;
+  line-height: 16px;
+  margin-top: 29px;
+}
+
+.food-active {
+  padding-bottom: 42px;
+  padding-top: 28px;
+  width: 874px;
+}
+
+.food-active .picture__item {
+  width: 452px;
+  height: 303px;
+}
+
+.food-active .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.food-active .description__item {
+  width: 350px;
+}
+
+.food-active .description__date {
+  font-size: 11px;
+}
+
+.food-active .description__subtitle {
+  font-size: 19px;
+}
+
+.food-active .description__text {
+  font-size: 13px;
+  line-height: 23px;
 }
 
 @media all and (min-width: 768px) {
@@ -1073,6 +1130,7 @@ ol {
 
   .articles-slider__slide {
     max-width: 320px;
+    max-height: 305px;
     padding: 18px 30px 21px 35px;
   }
 
