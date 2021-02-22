@@ -1097,6 +1097,65 @@ ol {
   line-height: 23px;
 }
 
+.wr-tweets {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.wr-tweets__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wr-tweets__twitter {
+  margin-bottom: 37px;
+}
+
+.wr-tweets__girl {
+  width: 91px;
+  height: 85px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 42px;
+}
+
+.wr-tweets__girl .icon__girl {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.wr-tweets__text {
+  width: 855px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.wr-tweets__item {
+  font-size: 20px;
+  line-height: 38px;
+}
+
+.wr-tweets__span {
+  font-family: "SSP-Bold", Arial, Helvetica, sans-serif;
+}
+
+.wr-form {
+  background-color: #212121;
+  height: 490px;
+}
+
 @media all and (min-width: 768px) {
   .swiper-pagination {
     display: none;

@@ -1470,3 +1470,57 @@
         }
     }
 }
+
+
+// секция tweets
+
+.wr-tweets {
+    padding-top: 95px;
+    padding-bottom: 95px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__twitter {
+        margin-bottom: 37px;
+    }
+
+    &__girl {
+        width: 91px;
+        height: 85px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-bottom: 42px;
+        .icon__girl {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+
+    &__text {
+        width: 855px;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    &__item {
+        font-size: 20px;
+        line-height: 38px;
+    }
+
+    &__span {
+        font-family: "SSP-Bold", Arial, Helvetica, sans-serif;
+    }
+}
+
+// секция form
+
+.wr-form {
+    background-color: #212121;
+    height: 490px;
+}
