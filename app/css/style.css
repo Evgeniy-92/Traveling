@@ -38,8 +38,8 @@ body {
   font-family: "SSP-Regular", Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: #000000;
-  overflow-x: hidden;
   background-color: #efefef;
+  overflow-x: hidden;
 }
 
 a {
@@ -104,10 +104,14 @@ ol {
   background-color: #ff3d00;
 }
 
+.swiper-button-disabled {
+  opacity: 0;
+}
+
 .wr-main {
   background-image: url("../img/dest/header/main-bg.jpg");
   background-size: cover;
-  height: 998px;
+  height: 100vh;
   background-position: center bottom;
 }
 
@@ -171,6 +175,10 @@ ol {
   font-family: "SSP-Bold", Arial, Helvetica, sans-serif;
   color: #fff;
   text-transform: uppercase;
+}
+
+.nav a:hover {
+  color: #ff5400;
 }
 
 .burger {
@@ -239,7 +247,7 @@ ol {
   line-height: 35px;
   margin-top: 56px;
   margin-right: -22px;
-  background-color: rgba(0, 0, 0, 0.21);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   padding: 12px 22px 10px 25px;
   -webkit-box-sizing: border-box;
@@ -305,6 +313,14 @@ ol {
   margin-top: 22px;
   margin-right: 45px;
   margin-bottom: 15px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.wr-home .btn:hover {
+  background-color: #ff4800;
+  color: #fff;
 }
 
 .wr-intro {
@@ -537,7 +553,15 @@ ol {
   letter-spacing: 1.05px;
 }
 
-.articles-arrow {
+.articles-arrow__left {
+  position: absolute;
+  outline: none;
+  cursor: pointer;
+  top: 166px;
+  left: 30px;
+}
+
+.articles-arrow__right {
   position: absolute;
   right: 9px;
   top: 166px;
@@ -606,21 +630,26 @@ ol {
   height: 106px;
 }
 
-.clients-arrow {
+.clients-arrow__right {
   position: absolute;
   right: 46px;
-  top: 106px;
+  top: 107px;
   outline: none;
   border: 1px solid #898989;
-  padding: 8px 17px 8px 18px;
+  padding: 10px 17px 6px 18px;
   border-radius: 10px;
   cursor: pointer;
 }
 
-.clients-arrow_right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.clients-arrow__left {
+  position: absolute;
+  left: 46px;
+  top: 107px;
+  outline: none;
+  border: 1px solid #898989;
+  padding: 10px 17px 6px 18px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .wr-portfolio {
@@ -667,11 +696,17 @@ ol {
 
 .wr-portfolio__item {
   margin: 0 14px;
-}
-
-.wr-portfolio__link {
   letter-spacing: 1.2px;
   color: #212121;
+  cursor: pointer;
+}
+
+.wr-portfolio__active {
+  color: #ff5400;
+}
+
+.hide {
+  display: none;
 }
 
 .slick {
@@ -708,8 +743,8 @@ ol {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center top;
-     object-position: center top;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
 .slick .slick-list {
@@ -1151,12 +1186,12 @@ ol {
   font-family: "SSP-Bold", Arial, Helvetica, sans-serif;
 }
 
-.wr-form {
+.wr-footer {
   background-color: #212121;
   height: 490px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 796px) {
   .swiper-pagination {
     display: none;
   }
@@ -1198,7 +1233,12 @@ ol {
     line-height: 29px;
   }
 
-  .articles-arrow {
+  .articles-arrow__left {
+    left: 60px;
+    top: 144px;
+  }
+
+  .articles-arrow__right {
     right: 60px;
     top: 144px;
   }
@@ -1297,8 +1337,13 @@ ol {
     max-width: 140px;
   }
 
-  .clients-arrow {
-    right: 90px;
+  .clients-arrow__right {
+    right: 59px;
+    top: 110px;
+  }
+
+  .clients-arrow__left {
+    left: 59px;
     top: 110px;
   }
 
@@ -1308,7 +1353,25 @@ ol {
 }
 
 @media all and (max-width: 796px) {
-  .articles-arrow {
+  .clients-slider {
+    height: 185px;
+  }
+}
+
+@media all and (max-width: 795px) {
+  .articles-arrow__left {
+    display: none;
+  }
+
+  .articles-arrow__right {
+    display: none;
+  }
+
+  .clients-arrow__right {
+    display: none;
+  }
+
+  .clients-arrow__left {
     display: none;
   }
 }
@@ -1452,14 +1515,6 @@ ol {
   .wr-clients {
     padding-top: 10px;
     padding-bottom: 10px;
-  }
-
-  .clients-slider {
-    height: 185px;
-  }
-
-  .clients-arrow {
-    display: none;
   }
 
   .wr-portfolio {
@@ -1779,9 +1834,6 @@ ol {
 
   .wr-portfolio__item {
     margin: 0 6px;
-  }
-
-  .wr-portfolio__link {
     font-size: 9px;
   }
 

@@ -4,8 +4,7 @@
 .wr-main {
     background-image: url("../img/dest/header/main-bg.jpg");
     background-size: cover;
-    // height: 100vh;
-    height: 998px;
+    height: 100vh;
     background-position: center bottom;
 }
 
@@ -83,6 +82,10 @@
         font-family: "SSP-Bold", Arial, Helvetica, sans-serif;
         color: #fff;
         text-transform: uppercase;
+
+        &:hover {
+            color: #ff5400;
+        }
 
         @media all and (max-width: 1024px) {
             font-size: 14px;
@@ -221,7 +224,7 @@
             line-height: 35px;
             margin-top: 56px;
             margin-right: -22px;
-            background-color: rgba(0, 0, 0, .21);
+            background-color: rgba(0, 0, 0, .4);
             border-radius: 10px;
             padding: 12px 22px 10px 25px;
             box-sizing: border-box;
@@ -354,6 +357,12 @@
         margin-top: 22px;
         margin-right: 45px;
         margin-bottom: 15px;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            background-color: #ff4800;
+            color: #fff;
+        }
 
         @media all and (max-width: 424px) {
             font-size: 13px;
@@ -758,14 +767,31 @@
     }
 }
 
-.articles-arrow {
+.articles-arrow__left {
+    position: absolute;
+    outline: none;
+    cursor: pointer;
+    top: 166px;
+    left: 30px;
+
+    @media all and (max-width: 795px) {
+        display: none;
+    }
+
+    @media all and (max-width: 1366px) {
+        left: 60px;
+        top: 144px;
+    }
+}
+
+.articles-arrow__right {
     position: absolute;
     right: 9px;
     top: 166px;
     outline: none;
     cursor: pointer;
 
-    @media all and (max-width: 796px) {
+    @media all and (max-width: 795px) {
         display: none;
     }
 
@@ -775,6 +801,7 @@
     }
     
 }
+
 
 // секция clients
 
@@ -815,7 +842,7 @@
         height: 165px;
     }
 
-    @media all and (max-width: 767px) {
+    @media all and (max-width: 796px) {
         height: 185px;
     }
     
@@ -882,26 +909,42 @@
     }
 }
 
-.clients-arrow {
+.clients-arrow__right {
     position: absolute;
     right: 46px;
-    top: 106px;
+    top: 107px;
     outline: none;
     border: 1px solid #898989;
-    padding: 8px 17px 8px 18px;
+    padding: 10px 17px 6px 18px;
     border-radius: 10px;
     cursor: pointer;
 
     @media all and (max-width: 991px) {
-        right: 90px;
+        right: 59px;
         top: 110px;
     }
-    @media all and (max-width: 767px) {
+    @media all and (max-width: 795px) {
+        display: none;
+    }
+}
+
+.clients-arrow__left {
+    position: absolute;
+    left: 46px;
+    top: 107px;
+    outline: none;
+    border: 1px solid #898989;
+    padding: 10px 17px 6px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    @media all and (max-width: 795px) {
         display: none;
     }
 
-    &_right {
-        display: flex;
+    @media all and (max-width: 991px) {
+        left: 59px;
+        top: 110px;
     }
 }
 
@@ -966,20 +1009,23 @@
 
     &__item {
         margin: 0 14px;
+        letter-spacing: 1.2px;
+        color: #212121;
+        cursor: pointer;
 
         @media all and (max-width: 424px) {
             margin: 0 6px;
-        }
-    }
-
-    &__link {
-        letter-spacing: 1.2px;
-        color: #212121;
-
-        @media all and (max-width: 424px) {
             font-size: 9px;
         }
     }
+
+    &__active {
+        color: #ff5400;
+    }
+}
+
+.hide {
+    display: none;
 }
 
 .slick {
@@ -1005,13 +1051,13 @@
             height: 260px;
         }
 
-        &:hover {
-            height: 410px;
+            &:hover {
+                height: 410px;
 
-            @media all and (max-width: 767px) {
-                height: 300px;
+                @media all and (max-width: 767px) {
+                    height: 300px;
+                }
             }
-        }
 
         &:focus {
             outline: none;
@@ -1022,7 +1068,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: center top;
+        object-position: center center;
     }
 
     
@@ -1520,7 +1566,7 @@
 
 // секция form
 
-.wr-form {
+.wr-footer {
     background-color: #212121;
     height: 490px;
 }

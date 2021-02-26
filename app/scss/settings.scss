@@ -2,8 +2,8 @@ body {
     font-family: "SSP-Regular", Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #000000;
-    overflow-x: hidden;
     background-color: #efefef;
+    overflow-x: hidden;
 }
 
 a {
@@ -91,11 +91,19 @@ ol {
     background-color: #ff3d00;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 796px) {
     .swiper-pagination {
         display: none;
     }
 }
+
+// стрелки swiper слайдера
+.swiper-button-disabled {
+    opacity: 0;
+}
+
+
+
 
 
 
