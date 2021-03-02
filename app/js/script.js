@@ -56,11 +56,17 @@ $('.wr-portfolio__slick').slick({
 
     responsive: [
         {
-          breakpoint: 425,
+          breakpoint: 601,
           settings: {
             slidesToShow: 2,
           }
         },
+        {
+            breakpoint: 481,
+            settings: {
+              slidesToShow: 1,
+            }
+          },
     ]
 });
 

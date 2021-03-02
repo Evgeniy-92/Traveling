@@ -36,8 +36,8 @@ ol {
         letter-spacing: 1.9px;
         margin-bottom: 32px;
 
-        @media all and (max-width: 424px) {
-           font-size: 22px;
+        @media all and (max-width: 480px) {
+           font-size: 19px;
         }
 
         @media all and (max-width: 767px) {
@@ -51,8 +51,8 @@ ol {
         letter-spacing: 2.6px;
         text-transform: capitalize;
 
-        @media all and (max-width: 424px) {
-            font-size: 25px;
+        @media all and (max-width: 480px) {
+            font-size: 22px;
         }
 
         @media all and (max-width: 767px) {
@@ -66,13 +66,16 @@ ol {
         margin: 0 auto;
         line-height: 33px;
 
-        @media all and (max-width: 424px) {
-            font-size: 13px;
-            line-height: 23px;
+        @media all and (max-width: 480px) {
+            max-width: 280px;
+            font-size: 12px;
+            line-height: 19px;
         }
 
         @media all and (max-width: 767px) {
-            line-height: 25px;
+            max-width:430px;
+            font-size: 14px;
+            line-height: 22px;
         }
     }
 
@@ -85,8 +88,29 @@ ol {
     width: 15px;
     height: 15px;
     background-color: #8d8d8d;
-    opacity: 1;
+    opacity: 1; 
+
+    @media all and (max-width: 480px) {
+        width: 9px;
+        height: 9px;
+        margin: 0 1px;
+    }
+
+    @media all and (max-width: 767px) {
+        width: 13px;
+        height: 13px;
+        margin: 0 3px;
+    }
 }
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 5px;
+
+    @media all and (max-width: 767px) {
+        margin: 0 3px;
+    }
+}
+
 .swiper-pagination-bullet-active {
     background-color: #ff3d00;
 }
