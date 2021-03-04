@@ -4,6 +4,7 @@ body {
     color: #000000;
     background-color: #efefef;
     overflow-x: hidden;
+    width: 100%;
 }
 
 a {
@@ -21,8 +22,7 @@ ol {
 
 .wrapper {
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
@@ -105,6 +105,7 @@ ol {
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 5px;
+    outline: none;
 
     @media all and (max-width: 767px) {
         margin: 0 3px;
@@ -125,11 +126,3 @@ ol {
 .swiper-button-disabled {
     opacity: 0;
 }
-
-
-
-
-
-
-
-

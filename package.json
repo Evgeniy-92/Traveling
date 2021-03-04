@@ -24,7 +24,7 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
-    "jquery": "^3.5.1",
+    "jquery": "^3.6.0",
     "node-normalize-scss": "^8.1.2"
   }
 }

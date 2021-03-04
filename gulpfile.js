@@ -37,7 +37,12 @@ function scripts() {
 }
 
 function styles() {
-    return src('app/scss/style.scss')
+    return src([
+        'app/css/normalize.css',
+        'app/scss/slick.scss',
+        'app/scss/slick-theme.scss',
+        'app/scss/style.scss'
+    ])
     .pipe(
         scss({
             outputStyle: 'expanded'

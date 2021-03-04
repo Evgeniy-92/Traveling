@@ -9,14 +9,15 @@ new Swiper('.articles-slider', {
         prevEl: '.articles-arrow__left'
     },
 
-    slidesPerView: 2,
+    slidesPerView: 1,
     
 
     breakpoints: {
-        921: {
+        551: {
             slidesPerView: 2,
 
         },
+
         1112: {
             slidesPerView: 3,
         },
@@ -52,7 +53,6 @@ $('.wr-portfolio__slick').slick({
     dots: true,
     focusOnSelect: true,
     speed: 1000,
-    // infinite: false,
 
     responsive: [
         {
@@ -116,7 +116,7 @@ listContainer.addEventListener('click', function(e) {
     item.classList.add('wr-portfolio__active');
 });
 
-
+/* бургер */
 $(document).ready(function() {
     $('.burger').click(function(e) {
         $('.burger,.nav').toggleClass('active');
@@ -148,6 +148,3 @@ container.addEventListener('mouseover', function(e) {
     clearClass(blocks, 'food-active');
     block.classList.add('food-active');
 })
-
-
-
