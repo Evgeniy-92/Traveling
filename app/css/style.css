@@ -1330,6 +1330,10 @@ ol {
   color: #999999;
 }
 
+.module__link:hover {
+  color: #ff4800;
+}
+
 .wr-footer__form {
   padding-top: 39px;
   position: relative;
@@ -1467,6 +1471,11 @@ ol {
   color: #f2f2f2;
   text-transform: uppercase;
   cursor: pointer;
+  outline: none;
+}
+
+.buttons__element:hover {
+  background-color: #ff4800;
 }
 
 .buttons__element:not(:last-child) {
